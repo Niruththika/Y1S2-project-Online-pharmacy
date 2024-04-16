@@ -1,0 +1,170 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.main {
+    width: 100%;
+    background-size: cover;
+    height: 50vh;
+    background-color: dodgerblue;
+}
+
+.navbar {
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+
+.icon {
+    width: 50px;
+    float: left;
+    height: 70px;
+}
+
+.logo {
+    color: black;
+    font-size: 45px;
+    font-family: 'Segoe UI Variable Display';
+    padding-left: 525px;
+    float: left;
+    padding-top: 60px;
+    text-align: center;
+}
+
+.acc {
+    padding-top: 40px;
+    padding-right: 50px;
+    float: right;
+}
+
+.singup {
+    float: right;
+    font-size: 20px;
+    padding-top: 60px;
+    padding-right: 50px;
+}
+
+.singin {
+    float: right;
+    font-size: 20px;
+    padding-top: 60px;
+    padding-right: 10px;
+}
+
+.pic {
+    padding-left: 80px;
+    padding-top: 0px;
+}
+
+
+.menu {
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+
+ul {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    ul li {
+        list-style: none;
+        margin-left: 100px;
+        margin-top: 40px;
+        font-size: 15px;
+    }
+
+        ul li a {
+            text-decoration: none;
+            color: white;
+            font-family: Arial;
+            font-weight: bold;
+            transition: 0.4s ease-in-out;
+        }
+
+            ul li a:hover {
+                color: black;
+            }
+
+.product {
+    display: inline-block;
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.product img {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 10px;
+}
+
+.product h3 {
+        margin-bottom: 5px;
+ }
+
+ .product p {
+        color: #888;
+}
+
+::placeholder {
+    color: black;
+}
+
+footer {
+    width: 100%;
+    background: #99cfe0;
+    display: block;
+    height: 90vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.inner-footer {
+    width: 105%;
+    margin: auto;
+    padding: 30px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: left;
+}
+
+.foot {
+    font-weight: 800;
+    margin: 10px 0;
+}
+
+    .foot h2 {
+        padding: 10px 3px;
+        box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.4);
+    }
+
+.footer-items {
+    width: 10%;
+    padding-left: 40px;
+    padding-top: 0px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+}
+
+.contact {
+    width: 10%;
+    padding: 140px 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: self-start;
+    padding-left: 550px;
+}

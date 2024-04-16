@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feedback Page</title>
+    <link rel="stylesheet" type="text/css" href="feedback.css">
+	  <script>
+function submitted()
+{
+  alert("Your details submited!");
+}
+</script>
+</head>
+
+<body>
+ <header>
+
+
+
+
+        <div class="main">
+            <div class="navbar">
+                <div class="icon">
+                    <h1 class="logo">Gateway Pharmacy</h1>
+                </div>
+            </div>
+            <div class="acc">
+                <a href="feedback.html">
+                    <button>
+
+                        Feedback
+                    </button>
+                </a>
+            </div>
+            <div class="singup">
+                <a href="signup.html">
+                    <button>
+                        Sign Up
+                    </button>
+                </a>
+            </div>
+            <div class="singin">
+                <a href="login page .html">
+                    <button>
+                        Sign In
+                    </button>
+                </a>
+            </div>
+            <div class="pic">
+                <img src="images/pic.jpg" style="width:150px">
+            </div>
+            <div class="menu">
+                <ul>
+                  <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="Product.html">Shop</a></li>
+                </ul>
+           
+        </div>
+		<script> 
+
+
+
+    function redirectToGoogle() { 
+      
+      var link = document.createElement('a'); 
+       
+      
+      link.href = 'https://www.google.com/'; 
+       
+       
+      link.target = '_blank'; 
+       
+
+      link.click(); 
+    } 
+  </script>
+<br>
+    </header>
+    <div class="container">
+        <h1>Feedback Page</h1>
+        <form method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <br>
+            <label for="rating">Rating:</label>
+            <div id="ratingContainer">
+                <input type="radio" id="star5" name="rating" value="5">
+                <label for="star5" title="Excellent">5 stars</label>
+                <input type="radio" id="star4" name="rating" value="4">
+                <label for="star4" title="Very Good">4 stars</label>
+                <input type="radio" id="star3" name="rating" value="3">
+                <label for="star3" title="Good">3 stars</label>
+                <input type="radio" id="star2" name="rating" value="2">
+                <label for="star2" title="Fair">2 stars</label>
+                <input type="radio" id="star1" name="rating" value="1">
+                <label for="star1" title="Poor">1 star</label>
+            </div>
+            
+            <input type="submit" value="Submit" onclick="submitted()">
+        </form>
+    </div>
+
+    <script>
+        const ratingContainer = document.getElementById("ratingContainer");
+        const ratingInputs = ratingContainer.getElementsByTagName("input");
+        let selectedRating = null;
+
+        // Add event listeners to rating inputs
+        for (let i = 0; i < ratingInputs.length; i++) {
+            ratingInputs[i].addEventListener("change", function() {
+                selectedRating = this.value;
+            });
+        }
+
+        // Add event listener to feedback form submission
+        document.getElementById("feedbackForm").addEventListener("submit", function(event) {
+            // Prevent form submission if rating is not selected
+            if (selectedRating === null) {
+                event.preventDefault();
+                alert("Please select a rating.");
+            }
+        });
+    </script>
+           
+        </form>
+    </div>
+	<br>
+	<?php 
+if ($_SERVER['REQUEST_METHOD'] === 'POST') { 
+  $username = $_POST['username']; 
+  $password = $_POST['password']; 
+  $email = $_POST['email']; 
+
+   
+  echo "Registration successful!"; 
+  ?>
+ 
+	 <footer>
+
+        <div class="footer">
+            <div class="inner-footer">
+                <div class="foot">
+                    <h2>Gateway Medical</h2>
+                </div>
+                <p>
+                    We are committed to your health at Health Mart.<br> We now offer an online shopping experience to make health and wellness products more accessible to you. You may browse thousands of home health and over-the- counter goods on our site.
+                </p>
+
+                <div class="footer-items">
+                    <a href="https://play.google.com/store/apps?hl=en&gl=US">
+                        <img src="images/google play.png" alt="google playstore" style="width:120px;height:140px;">
+                    </a>
+                    <a href="https://www.apple.com/app-store">
+                        <img src="images/o store.png" " alt="apple app store" style="width:120px;height:50px;">
+                    </a>
+                    <br /><br />
+                    <img src="images/qr_code.png" alt="QR" style="width:100px;height:100px;">
+
+
+                </div>
+
+
+                <div class="contact">
+                    <ul>
+
+                        <li>
+                            <a href="https://www.facebook.com/">
+                                <img src="images/facebook.png" alt="facebook" style="width:25px;height:25px;">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/">
+                                <img src="images/twitter.png" alt="twitter" style="width:25px;height:25px;">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/">
+                                <img src="images/inster.png" alt="instergram" style="width:25px;height:25px;">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.google.com/">
+                                <img src="images/google.png" alt="google" style="width:25px;height:25px;">
+                            </a>
+                        </li>
+
+
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        <p>&copy; 2023 Pharmacy Portal. All rights reserved.</p>
+    </footer>
+
+ 
+</body>
+</html>

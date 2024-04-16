@@ -1,0 +1,140 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.main {
+    width: 100%;
+    background-size: cover;
+    height: 50vh;
+    background-color: dodgerblue;
+}
+
+.navbar {
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+
+.icon {
+    width: 50px;
+    float: left;
+    height: 70px;
+}
+
+.logo {
+    color: black;
+    font-size: 45px;
+    font-family: 'Segoe UI Variable Display';
+    padding-left: 525px;
+    float: left;
+    padding-top: 60px;
+    text-align: center;
+}
+
+.acc {
+    padding-top: 40px;
+    padding-right: 50px;
+    float: right;
+}
+
+.singup {
+    float: right;
+    font-size: 20px;
+    padding-top: 60px;
+    padding-right: 50px;
+}
+
+.singin {
+    float: right;
+    font-size: 20px;
+    padding-top: 60px;
+    padding-right: 10px;
+}
+
+
+.container {
+    width: 400px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 5px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+::placeholder {
+    color: black;
+}
+
+footer {
+    width: 100%;
+    background: #99cfe0;
+    display: block;
+    height: 90vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.inner-footer {
+    width: 105%;
+    margin: auto;
+    padding: 30px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: left;
+}
+
+.foot {
+    font-weight: 800;
+    margin: 10px 0;
+}
+
+    .foot h2 {
+        padding: 10px 3px;
+        box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.4);
+    }
+
+.footer-items {
+    width: 10%;
+    padding-left: 40px;
+    padding-top: 0px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+}
+
+.contact {
+    width: 10%;
+    padding: 140px 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: self-start;
+    padding-left: 550px;
+}

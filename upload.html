@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>prescription upload</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="ch.js" ></script>
+  </head>
+
+<body>
+
+ <div class="main">
+            <div class="navbar">
+                <div class="icon">
+                    <h1 class="logo">Gateway Pharmacy</h1>
+                </div>
+            </div>
+            <div class="acc">
+                <a href="feedback.html">
+                    <button>
+
+                       Feedback
+                    </button>
+                </a>
+            </div>
+            <div class="singup">
+                <a href="signup.html">
+                    <button>
+                        Sign Up
+                    </button>
+                </a>
+            </div>
+            <div class="singin">
+                <a href="login page .html">
+                    <button>
+                        Sign In
+                    </button>
+                </a>
+            </div>
+            <div class="pic">
+                <img src="images/pic.jpg" style="width:150px">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="Product.html">Shop</a></li>
+                </ul>
+            </div>
+           
+        </div>
+	
+    
+	<br>
+	<main>
+		<section class="conpre">
+			<center>
+				<form method="POST" action="presc.php">
+				<h2 class="pre">Prescription Upload</h2>
+				<h3>Only a valid prescription and image will be accepted in order to supply prescription drugs.</h3>
+				<h3 id="pu">prescription Upload</h3>
+			</center>
+				<hr>
+			<center>
+				<div class="input-group"></div>
+				<br><b>patient name:</b><br></b>
+				<input type="text"  placeholder="name" name="pname"  id="patientname" required>
+				
+                </div>
+				<br><br>
+				<b> patient age:</b><br><br>
+				<div class="input-group">
+				<input type="text"  placeholder="age" name="age" id="patientage" required>
+			
+				</div>
+				<br><br>
+
+				<b>Address: </b><br><br>
+				<div class="input-group"></div>
+				<input type="text"  placeholder="address" name="adr" id="Address" required>
+
+				<br><br>
+
+				<b>Email: </b><br><br>
+				<div class="input-group"></div>
+				<input type="text"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}" placeholder="Email" name="Em"  id="Email"required>
+				<div class="error"required></div>
+
+				<b>gender: </b><br><br>
+				<div class="input-group"></div>
+				<input type="radio" id="gender" name="gender" value="Male">Male <input type="radio" name="gender" value="female">Female
+			
+				<br><br>
+				
+				<b id="qty">Enter the prescription items and qty</b><br><br>
+				<textarea name="image" rows="10" cols="50"required></textarea><br><br>
+				<b id="fily">upload prescription file</b> <br><br><input type="submit" class="chse"value="choose file" required><br>
+				<br>
+				<p id="payy" >payment method</p><br>
+				 <select name="payment"class="card" required><br>
+				 <option value="card payment"> cardpayment</option><br>
+				 </select><br>
+				 <br>
+				 <p id="pre">I prefer receiving any refund as:<br></p>
+				 <br>
+				  <select name="paymentmethod"class="deli" required><br>
+				 <option value="cash on delivery"> cash on delivery</option><br>
+				 <option value="cash"> cash</option><br><br>
+				 </select><br><br<>
+				 <br>
+				<p id="deflt"> Default Shipping Address<br></p>
+				 <br>
+	 
+				 <input type="submit" class="ship" value="Add Shipping Address" required>
+				 <input type="submit" class="ship" value="Add new Shipping Address"><br>
+				 
+				 
+				 
+				
+				 <br>
+
+				 <p id="note">Note: The E-mail coonected to your account will get a link for the card payment after our pharmacist has processed your purchase.</p>
+			</center>
+				 <br><br>
+				 <input type="checkBox"id="checkBox" onclick="enableButton()" required>accept terms and condition
+				 <br>
+				 <br>
+			<center>
+				 <input type="Submit"  class="btnp" id="submitBtn" value="submit prescription" >
+				</center>
+				</form>
+				
+		</section>
+	</main>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<footer>
+
+        <div class="footer">
+            <div class="inner-footer">
+                <div class="foot">
+                    <h2>Gateway Medical</h2>
+                </div>
+                <p>
+                    We are committed to your health at Health Mart.<br> We now offer an online shopping experience to make health and wellness products more accessible to you. You may browse thousands of home health and over-the- counter goods on our site.
+                </p>
+
+                <div class="footer-items">
+                    <a href="https://play.google.com/store/apps?hl=en&gl=US">
+                        <img src="images/google play.png" alt="google playstore" style="width:120px;height:140px;">
+                    </a>
+                    <a href="https://www.apple.com/app-store">
+                        <img src="images/o store.png" " alt="apple app store" style="width:120px;height:50px;">
+                    </a>
+                    <br /><br />
+                    <img src="images/qr_code.png" alt="QR" style="width:100px;height:100px;">
+
+
+                </div>
+
+
+                <div class="contact">
+                    <ul>
+
+                        <li>
+                            <a href="https://www.facebook.com/">
+                                <img src="images/facebook.png" alt="facebook" style="width:25px;height:25px;">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/">
+                                <img src="images/twitter.png" alt="twitter" style="width:25px;height:25px;">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/">
+                                <img src="images/inster.png" alt="instergram" style="width:25px;height:25px;">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.google.com/">
+                                <img src="images/google.png" alt="google" style="width:25px;height:25px;">
+                            </a>
+                        </li>
+
+
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        <p>&copy; 2023 Pharmacy Portal. All rights reserved.</p>
+    </footer>
+	
+</head>
+</html>
